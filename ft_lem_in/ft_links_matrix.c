@@ -26,7 +26,7 @@ int	ft_find_ind(char *name, t_room *room)
 	return (i);
 }
 
-int	**ft_make_matrix(int **matrix, int len)
+int	**ft_make_matrix(int **matrix, int len, int num)
 {
 	int i;
 	int j;
@@ -38,7 +38,7 @@ int	**ft_make_matrix(int **matrix, int len)
 		matrix[i] = (int*)malloc(sizeof(int) * len);
 		while (j != len)
 		{
-			matrix[i][j] = 0;
+			matrix[i][j] = num;
 			j++;
 		}
 		j = 0;

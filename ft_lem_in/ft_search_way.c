@@ -19,19 +19,61 @@ t_room *ft_open_room(char *name, t_room *room)
 	return (room);
 }
 
-int		ft_way(t_data *data, t_room *room)
+int ft_find_index(t_room *room, char *name)
 {
-	t_start	*start;
-	t_end	*end;
+	int ind;
+
+	ind = 0;
+	while (ft_strcmp(room->name, room->start))
+	{
+		room = room->next;
+		ind++;
+	}
+	return (ind);
+}
+
+int **ft_write_length(t_data *data, char **length, int count, int ind)
+{
+	int j;
+
+	j = 0;
+	while(j < data->len)
+	{
+		if (data->matrix[ind][j] == count)
+			length[ind][j] = count;
+		j++;
+	}
+	return (length);
+}
+
+int ft_sec_step(t_data *data, char **length, int count, t_room *room)
+{
 	int i;
 	int j;
 
 	i = 0;
 	j = 0;
-	start = ft_create_start(start);
-	end = ft_create_end(end);
-	while (ft_strcmp(start[i], end[j]))
+	while (i < data->len)
 	{
-		if ()
+		while (j < data->len)
+		{
+			if (length[i][j] == count)
+				ft_write_length(data, length, count, j);
+
+		}
 	}
+}
+
+int **ft_length_matrix(t_data *data, t_room *room)
+{
+	int **length;
+	int count;
+	int ind;
+
+	length = NULL;
+	length = ft_make_matrix(length, data->len, -1);
+	ind = ft_find_index(room, data->start);
+	count = 1;
+	while ()
+		length = ft_write_length(data, length, count, ind);
 }

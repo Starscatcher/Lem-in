@@ -35,18 +35,9 @@ t_data	*ft_create_data(t_data *data)
 	return (data);
 }
 
-t_start	*ft_create_start(t_start *start)
+t_ways	*ft_create_ways(t_ways *ways)
 {
-	start = (t_start*)malloc(sizeof(t_start));
-	start->first = (char**)malloc(sizeof(char*) * 2);
-	start->first[1] == '\0';
-	return (start);
-}
-
-t_end	*ft_create_end(t_end *end)
-{
-	end = (t_end*)malloc(sizeof(t_end));
-	end->second = (char**)malloc(sizeof(char*) * 2);
-	end->second[1] == '\0';
-	return (end);
+	ways = (t_ways*)malloc(sizeof(t_ways));
+	ways->way = (char**)malloc(sizeof(char*));
+	return (ways);
 }

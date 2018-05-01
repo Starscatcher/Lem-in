@@ -16,11 +16,13 @@ int	main(void)
 {
 	t_room	*room;
 	t_data	*data;
+	t_ways	*ways;
 	char	*line;
 
 	room = NULL;
 	line = NULL;
 	data = ft_create_data(data);
 	room = ft_read(line, room, data);
-	ft_way(data, room);
+	ways = ft_create_ways(ways);
+	ft_length_matrix(data, room);
 }
