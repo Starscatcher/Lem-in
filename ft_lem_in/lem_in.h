@@ -25,27 +25,17 @@ typedef struct			s_ways
   struct s_start	*next;
 }						t_ways;
 
-typedef struct			s_start
-{
-  	char			***first;
-  	struct s_start	*next;
-  	struct s_start	*prev;
-}						t_start;
-
-typedef struct			s_end
-{
-	char			**second;
-  	struct s_end	*next;
- 	struct s_end	*prev;
-}						t_end;
-
 typedef struct			s_data
 {
 	int	ants;
 	int	**matrix;
+	int **length;
   	int len;
 	char *start;
 	char *end;
+	int size;
+	int *num;
+	int *secnum;
 }						t_data;
 
 typedef struct			s_room

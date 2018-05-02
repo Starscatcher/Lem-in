@@ -43,7 +43,7 @@ int		ft_room_error(char *line)
 
 	if (line && line[0] && line[0] == '#')
 		return (0);
-	i = 0;
+	i = 1;
 	rooms = ft_strsplit(line, ' ');
 	if (ft_check_arr_len(rooms) == 3)
 	{

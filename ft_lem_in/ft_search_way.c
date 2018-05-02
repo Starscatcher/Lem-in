@@ -12,6 +12,36 @@
 
 #include "lem_in.h"
 
+int *ft_int_realloc(int *arr, int size, int newsize)
+{
+    int *new;
+    int i;
+
+    i = 0;
+    new = (int*)malloc(sizeof(int) * newsize);
+    while (i < size)
+    {
+        new[i] = arr[i];
+        i++;
+    }
+    free(arr);
+    return (new);
+}
+
+int *ft_intcpy(int *new, int *old, int size)
+{
+    int i;
+
+    i = 0;
+    new = (int *)malloc(sizeof(int) * size);
+    while (i < size)
+    {
+        new[i] = old[i];
+        i++;
+    }
+    return (new);
+}
+
 t_room *ft_open_room(char *name, t_room *room)
 {
 	while (ft_strcmp(name, room->name))
@@ -24,7 +54,7 @@ int ft_find_index(t_room *room, char *name)
 	int ind;
 
 	ind = 0;
-	while (ft_strcmp(room->name, room->start))
+	while (ft_strcmp(room->name, name))
 	{
 		room = room->next;
 		ind++;
@@ -32,48 +62,111 @@ int ft_find_index(t_room *room, char *name)
 	return (ind);
 }
 
-int **ft_write_length(t_data *data, char **length, int count, int ind)
+int ft_return_small(int count, int a)
 {
-	int j;
-
-	j = 0;
-	while(j < data->len)
-	{
-		if (data->matrix[ind][j] == count)
-			length[ind][j] = count;
-		j++;
-	}
-	return (length);
+    if (!a)
+        return (count);
+    else if (count < a)
+        return (count);
+    else
+        return(a);
 }
 
-int ft_sec_step(t_data *data, char **length, int count, t_room *room)
+void    ft_replace_count(int ind, int count, int len, t_data *data, int end)
 {
-	int i;
-	int j;
+    int y;
+    int small;
 
-	i = 0;
-	j = 0;
-	while (i < data->len)
-	{
-		while (j < data->len)
-		{
-			if (length[i][j] == count)
-				ft_write_length(data, length, count, j);
+    y = 0;
+    while (y < len)
+    {
+        if (data->matrix[ind][y] == 1 && ind != end)
+        {
+            small = ft_return_small(count, data->length[ind][y]);
+            data->length[ind][y] = small;
+            data->length[y][ind] = small;
+        }
+        y++;
+    }
+}
 
-		}
-	}
+int *ft_search(int ind, int count, int len, t_data *data, int end)
+{
+    int y;
+
+    y = 0;
+    while (y < len && ind != end)
+    {
+        if (data->length[ind][y] == count)
+        {
+            ft_replace_count(y, count + 1, len, data, end);
+            if (!data->num)
+            {
+                data->size++;
+                data->num = (int *) malloc(sizeof(int) * data->size);
+                data->num[data->size - 1] = y;
+            }
+            else
+            {
+                data->size++;
+                data->num = ft_int_realloc(data->num, data->size - 1, data->size);
+                data->num[data->size - 1] = y;
+            }
+        }
+        y++;
+    }
 }
 
 int **ft_length_matrix(t_data *data, t_room *room)
 {
-	int **length;
 	int count;
+	int on;
 	int ind;
+	int i;
+	int *arr;
+	int len;
+	int end;
 
-	length = NULL;
-	length = ft_make_matrix(length, data->len, -1);
+	on = 0;
+	i = 0;
+	arr = NULL;
+	data->length = (int**)malloc(sizeof(int*) * data->len);
+	data->length = ft_make_matrix(data->length, data->len, 0);
 	ind = ft_find_index(room, data->start);
+	end = ft_find_index(room, data->end);
 	count = 1;
-	while ()
-		length = ft_write_length(data, length, count, ind);
+    ft_replace_count(ind, count, data->len, data, end);
+	while(1)
+    {
+        if (!on++)
+            ft_search(ind, count, data->len, data, end);
+        if (arr)
+        {
+            free(arr);
+            arr = NULL;
+        }
+        if (!arr)
+        {
+            len = data->size;
+            if (len == 0)
+                break ;
+            arr = ft_intcpy(arr, data->num, len);
+            free(data->num);
+            data->num = NULL;
+            data->size = 0;
+            count++;
+        }
+	    while (i < len)
+        {
+            ft_search(arr[i], count, data->len, data, end);
+            i++;
+        }
+        i = 0;
+    }
+    for (int j = 0; j < data->len; ++j) {
+        for (int k = 0; k < data->len; ++k) {
+            ft_printf("%d ", data->length[j][k]);
+        }
+        ft_printf("\n");
+    }
 }

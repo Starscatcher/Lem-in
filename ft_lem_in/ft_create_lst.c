@@ -32,6 +32,10 @@ t_data	*ft_create_data(t_data *data)
 	data->len = 0;
 	data->start = NULL;
 	data->end = NULL;
+	data->num = NULL;
+	data->secnum = NULL;
+	data->length = NULL;
+	data->size = 0;
 	return (data);
 }
 
