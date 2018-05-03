@@ -1,11 +1,7 @@
-cmake_minimum_required(VERSION 3.10)
-project(Lem_in C)
+cmake_minimum_required(VERSION 3.9)
+project(Lem_in)
 
-set(CMAKE_C_STANDARD 11)
-
-include_directories(ft_lem_in)
-include_directories(libftprintf/libft)
-include_directories(libftprintf/printf)
+set(CMAKE_CXX_STANDARD 11)
 
 add_executable(Lem_in
         ft_lem_in/ft_add_parameters.c
@@ -14,7 +10,7 @@ add_executable(Lem_in
         ft_lem_in/ft_error.c
         ft_lem_in/ft_links_matrix.c
         ft_lem_in/ft_read_args.c
-        ft_lem_in/ft_search_way.c
+        ft_lem_in/ft_distance.c
         ft_lem_in/lem_in.h
         ft_lem_in/main.c
         libftprintf/libft/ft_atoi.c
@@ -98,4 +94,4 @@ add_executable(Lem_in
         libftprintf/printf/ft_printf.h
         libftprintf/printf/ft_read_args.c
         libftprintf/printf/ft_read_flags.c
-        libftprintf/printf/ft_unicode.c)
+        libftprintf/printf/ft_unicode.c libftprintf/libft/ft_intrealloc.c libftprintf/libft/ft_intcpy.c libftprintf/libft/ft_inddel.c ft_lem_in/ft_ways.c libftprintf/libft/ft_return_smaller.c)

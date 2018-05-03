@@ -21,8 +21,8 @@
 
 typedef struct			s_ways
 {
-  char				**way;
-  struct s_start	*next;
+  int				*way;
+  struct s_ways	*next;
 }						t_ways;
 
 typedef struct			s_data
@@ -35,7 +35,8 @@ typedef struct			s_data
 	char *end;
 	int size;
 	int *num;
-	int *secnum;
+	int indend;
+  	int indstart;
 }						t_data;
 
 typedef struct			s_room
@@ -48,8 +49,9 @@ typedef struct			s_room
 	struct s_room	*next;
 }						t_room;
 
+void					ft_find_ways(t_data *data, t_room *room, t_ways *ways);
 t_ways					*ft_create_ways(t_ways *ways);
-int 					**ft_length_matrix(t_data *data, t_room *room);
+void					ft_search_distance(t_data *data, t_room *room);
 t_data					*ft_create_data(t_data *data);
 int						ft_find_ind(char *name, t_room *room);
 void					ft_print_error(int i, char *str);

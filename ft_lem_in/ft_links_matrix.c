@@ -33,6 +33,7 @@ int	**ft_make_matrix(int **matrix, int len, int num)
 
 	i = 0;
 	j = 0;
+	matrix = (int**)malloc(sizeof(int*) * len);
 	while (i != len)
 	{
 		matrix[i] = (int*)malloc(sizeof(int) * len);

@@ -33,8 +33,9 @@ t_data	*ft_create_data(t_data *data)
 	data->start = NULL;
 	data->end = NULL;
 	data->num = NULL;
-	data->secnum = NULL;
 	data->length = NULL;
+	data->indend = 0;
+	data->indstart = 0;
 	data->size = 0;
 	return (data);
 }
@@ -42,6 +43,7 @@ t_data	*ft_create_data(t_data *data)
 t_ways	*ft_create_ways(t_ways *ways)
 {
 	ways = (t_ways*)malloc(sizeof(t_ways));
-	ways->way = (char**)malloc(sizeof(char*));
+	ways->way = NULL;
+	ways->next = NULL;
 	return (ways);
 }

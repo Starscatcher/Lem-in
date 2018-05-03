@@ -29,7 +29,6 @@ int		**ft_find_links(char *line, int fd, t_room *room, int len)
 	char	**links;
 
 	links = NULL;
-	matrix = (int**)malloc(sizeof(int*) * len);
 	matrix = ft_make_matrix(matrix, len, 0);
 	links = ft_link_error(line, fd);
 	matrix[ft_find_ind(links[0], room)][ft_find_ind(links[1], room)] = 1;

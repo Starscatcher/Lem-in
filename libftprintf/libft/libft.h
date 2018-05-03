@@ -21,6 +21,10 @@
 
 # define BUFF_SIZE 1
 
+int 				ft_return_smaller(int count, int a);
+void				ft_intdel(int **arr);
+int 				*ft_intcpy(int *new, int *old, int size);
+int 				*ft_int_realloc(int *arr, int size, int newsize);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
