@@ -94,4 +94,4 @@ add_executable(Lem_in
         libftprintf/printf/ft_printf.h
         libftprintf/printf/ft_read_args.c
         libftprintf/printf/ft_read_flags.c
-        libftprintf/printf/ft_unicode.c libftprintf/libft/ft_intrealloc.c libftprintf/libft/ft_intcpy.c libftprintf/libft/ft_inddel.c ft_lem_in/ft_ways.c libftprintf/libft/ft_return_smaller.c)
+        libftprintf/printf/ft_unicode.c libftprintf/libft/ft_intrealloc.c libftprintf/libft/ft_intcpy.c libftprintf/libft/ft_inddel.c ft_lem_in/ft_ways.c libftprintf/libft/ft_return_smaller.c libftprintf/libft/ft_int_reverse.c)

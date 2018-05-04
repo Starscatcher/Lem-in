@@ -12,6 +12,32 @@
 
 #include "lem_in.h"
 
+char	*ft_find_name(t_room *room, int ind)
+{
+	int i;
+
+	i = 0;
+	while (i != ind)
+	{
+		room = room->next;
+		i++;
+	}
+	return (room->name);
+}
+
+int ft_find_index(t_room *room, char *name)
+{
+	int ind;
+
+	ind = 0;
+	while (room && ft_strcmp(room->name, name))
+	{
+		room = room->next;
+		ind++;
+	}
+	return (ind);
+}
+
 int	ft_check_strdigit(char *arr)
 {
 	int i;

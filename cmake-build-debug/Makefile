@@ -474,6 +474,33 @@ libftprintf/libft/ft_inddel.c.s:
 	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_inddel.c.s
 .PHONY : libftprintf/libft/ft_inddel.c.s
 
+libftprintf/libft/ft_int_reverse.o: libftprintf/libft/ft_int_reverse.c.o
+
+.PHONY : libftprintf/libft/ft_int_reverse.o
+
+# target to build an object file
+libftprintf/libft/ft_int_reverse.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o
+.PHONY : libftprintf/libft/ft_int_reverse.c.o
+
+libftprintf/libft/ft_int_reverse.i: libftprintf/libft/ft_int_reverse.c.i
+
+.PHONY : libftprintf/libft/ft_int_reverse.i
+
+# target to preprocess a source file
+libftprintf/libft/ft_int_reverse.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.i
+.PHONY : libftprintf/libft/ft_int_reverse.c.i
+
+libftprintf/libft/ft_int_reverse.s: libftprintf/libft/ft_int_reverse.c.s
+
+.PHONY : libftprintf/libft/ft_int_reverse.s
+
+# target to generate assembly for a file
+libftprintf/libft/ft_int_reverse.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.s
+.PHONY : libftprintf/libft/ft_int_reverse.c.s
+
 libftprintf/libft/ft_intcpy.o: libftprintf/libft/ft_intcpy.c.o
 
 .PHONY : libftprintf/libft/ft_intcpy.o
@@ -2682,6 +2709,9 @@ help:
 	@echo "... libftprintf/libft/ft_inddel.o"
 	@echo "... libftprintf/libft/ft_inddel.i"
 	@echo "... libftprintf/libft/ft_inddel.s"
+	@echo "... libftprintf/libft/ft_int_reverse.o"
+	@echo "... libftprintf/libft/ft_int_reverse.i"
+	@echo "... libftprintf/libft/ft_int_reverse.s"
 	@echo "... libftprintf/libft/ft_intcpy.o"
 	@echo "... libftprintf/libft/ft_intcpy.i"
 	@echo "... libftprintf/libft/ft_intcpy.s"

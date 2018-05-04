@@ -122,6 +122,9 @@
 		<Unit filename="/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_inddel.c">
 			<Option target="Lem_in"/>
 		</Unit>
+		<Unit filename="/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_int_reverse.c">
+			<Option target="Lem_in"/>
+		</Unit>
 		<Unit filename="/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_intcpy.c">
 			<Option target="Lem_in"/>
 		</Unit>

@@ -12,19 +12,6 @@
 
 #include "lem_in.h"
 
-int ft_find_index(t_room *room, char *name)
-{
-	int ind;
-
-	ind = 0;
-	while (room && ft_strcmp(room->name, name))
-	{
-		room = room->next;
-		ind++;
-	}
-	return (ind);
-}
-
 void    ft_replace_count(int ind, int count, int len, t_data *data)
 {
     int y;
@@ -117,5 +104,4 @@ void	ft_search_distance(t_data *data, t_room *room)
 	data->indend = ft_find_index(room, data->end);
 	ft_replace_count(ind, count, data->len, data);
 	ft_length_matrix(data, len, count, ind);
-
 }

@@ -19,10 +19,18 @@
 # include <errno.h>
 # include "../libftprintf/libft/libft.h"
 
+typedef struct			s_road
+{
+  char				*name;
+  struct s_road		*next;
+}						t_road;
+
 typedef struct			s_ways
 {
   int				*way;
-  struct s_ways	*next;
+  int				len;
+  struct s_road		*road;
+  struct s_ways		*next;
 }						t_ways;
 
 typedef struct			s_data
@@ -49,6 +57,9 @@ typedef struct			s_room
 	struct s_room	*next;
 }						t_room;
 
+t_road					*ft_create_road(t_road *road);
+char					*ft_find_name(t_room *room, int ind);
+int 					ft_find_index(t_room *room, char *name);
 void					ft_find_ways(t_data *data, t_room *room, t_ways *ways);
 t_ways					*ft_create_ways(t_ways *ways);
 void					ft_search_distance(t_data *data, t_room *room);

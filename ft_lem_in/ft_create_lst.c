@@ -40,10 +40,20 @@ t_data	*ft_create_data(t_data *data)
 	return (data);
 }
 
+t_road	*ft_create_road(t_road *road)
+{
+	road = (t_road*)malloc(sizeof(t_road));
+	road->next = NULL;
+	road->name = NULL;
+	return (road);
+}
+
 t_ways	*ft_create_ways(t_ways *ways)
 {
 	ways = (t_ways*)malloc(sizeof(t_ways));
 	ways->way = NULL;
+	ways->len = 0;
+	ways->road = ft_create_road(ways->road);
 	ways->next = NULL;
 	return (ways);
 }

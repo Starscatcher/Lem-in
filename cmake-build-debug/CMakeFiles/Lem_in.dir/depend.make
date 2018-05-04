@@ -49,6 +49,9 @@ CMakeFiles/Lem_in.dir/libftprintf/libft/ft_char_replace.c.o: ../libftprintf/libf
 CMakeFiles/Lem_in.dir/libftprintf/libft/ft_inddel.c.o: ../libftprintf/libft/ft_inddel.c
 CMakeFiles/Lem_in.dir/libftprintf/libft/ft_inddel.c.o: ../libftprintf/libft/libft.h
 
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o: ../libftprintf/libft/ft_int_reverse.c
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o: ../libftprintf/libft/libft.h
+
 CMakeFiles/Lem_in.dir/libftprintf/libft/ft_intcpy.c.o: ../libftprintf/libft/ft_intcpy.c
 CMakeFiles/Lem_in.dir/libftprintf/libft/ft_intcpy.c.o: ../libftprintf/libft/libft.h
 

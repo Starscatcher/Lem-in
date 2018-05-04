@@ -21,6 +21,7 @@
 
 # define BUFF_SIZE 1
 
+int					*ft_int_reverse(int *arr, int len);
 int 				ft_return_smaller(int count, int a);
 void				ft_intdel(int **arr);
 int 				*ft_intcpy(int *new, int *old, int size);
