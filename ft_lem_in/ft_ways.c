@@ -62,7 +62,7 @@ int	*ft_build_way(t_data *data, int ind, int *way, int *i)
 	return (way);
 }
 
-void	ft_write_ways(t_ways *ways, t_room *room)
+void	ft_write_ways(t_ways *ways, t_room *room, int *way)
 {
 	t_road	*new;
 	int size;
@@ -72,45 +72,50 @@ void	ft_write_ways(t_ways *ways, t_room *room)
 	size = 0;
 	while (size != ways->len)
 	{
-		ways->road->name = ft_strdup(ft_find_name(room, ways->way[size]));
-		ft_printf("%s ", ways->road->name);
+		ways->road->name = ft_strdup(ft_find_name(room, way[size]));
 		if (size + 1 != ways->len)
 		{
 			new = ft_create_road(new);
 			ways->road->next = new;
+			ways->road->next->prev = ways->road;
 			ways->road = ways->road->next;
 		}
 		size++;
 	}
-	ft_printf("\n");
 	ways->road = head;
+}
+
+void	ft_del_last_lst(t_ways *ways)
+{
+	while (ways->next->next)
+		ways = ways->next;
+	free(ways->next);
+	ways->next = NULL;
 }
 
 void	ft_find_ways(t_data *data, t_room *room, t_ways *ways)
 {
-	t_ways *copy;
 	int min;
 	int i;
 	int len;
+	int *way;
 
-	copy = ways;
-	i = 0;
 	len = 1;
 	while ((min = ft_ind_min_int(data, data->indend)) != -1)
 	{
-		copy->way = (int*)malloc(sizeof(int) * len);
-		copy->way[i++] = data->indend;
+		i = 0;
+		way = (int*)malloc(sizeof(int) * len);
+		way[i++] = data->indend;
 		data->length[data->indend][min] = 0;
 		data->length[min][data->indend] = 0;
-		copy->way = ft_build_way(data, min, copy->way, &i);
-		copy->way = ft_int_reverse(copy->way, i);
-		copy->len = i;
-		if (copy->way != NULL)
+		way = ft_build_way(data, min, way, &i);
+		way = ft_int_reverse(way, i);
+		ways->len = i;
+		if (way != NULL)
 		{
-			ft_write_ways(copy, room);
-			copy->next = ft_create_ways(copy->next);
-			copy = copy->next;
+			ft_write_ways(ways, room, way);
+			ways->next = ft_create_ways(ways->next);
+			ways = ways->next;
 		}
-		i = 0;
 	}
 }

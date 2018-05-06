@@ -2313,6 +2313,54 @@ CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o.provides: CMakeFiles/
 CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o.provides.build: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o
 
 
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o: CMakeFiles/Lem_in.dir/flags.make
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o: ../ft_lem_in/ft_ants.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o   -c /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_ants.c
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_ants.c > CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.i
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_ants.c -o CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.s
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o.requires:
+
+.PHONY : CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o.requires
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o.provides: CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o.requires
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o.provides.build
+.PHONY : CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o.provides
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o.provides.build: CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o
+
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o: CMakeFiles/Lem_in.dir/flags.make
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o: ../ft_lem_in/ft_sort_ways.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o   -c /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_sort_ways.c
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_sort_ways.c > CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.i
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_sort_ways.c -o CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.s
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.requires:
+
+.PHONY : CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.requires
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.provides: CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.requires
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.provides.build
+.PHONY : CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.provides
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.provides.build: CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o
+
+
 # Object files for target Lem_in
 Lem_in_OBJECTS = \
 "CMakeFiles/Lem_in.dir/ft_lem_in/ft_add_parameters.c.o" \
@@ -2408,7 +2456,9 @@ Lem_in_OBJECTS = \
 "CMakeFiles/Lem_in.dir/libftprintf/libft/ft_inddel.c.o" \
 "CMakeFiles/Lem_in.dir/ft_lem_in/ft_ways.c.o" \
 "CMakeFiles/Lem_in.dir/libftprintf/libft/ft_return_smaller.c.o" \
-"CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o"
+"CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o" \
+"CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o" \
+"CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o"
 
 # External object files for target Lem_in
 Lem_in_EXTERNAL_OBJECTS =
@@ -2507,9 +2557,11 @@ Lem_in: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_inddel.c.o
 Lem_in: CMakeFiles/Lem_in.dir/ft_lem_in/ft_ways.c.o
 Lem_in: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_return_smaller.c.o
 Lem_in: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o
+Lem_in: CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o
+Lem_in: CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o
 Lem_in: CMakeFiles/Lem_in.dir/build.make
 Lem_in: CMakeFiles/Lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Linking C executable Lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Linking C executable Lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2611,6 +2663,8 @@ CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_indde
 CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/ft_lem_in/ft_ways.c.o.requires
 CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_return_smaller.c.o.requires
 CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o.requires
+CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o.requires
+CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.requires
 
 .PHONY : CMakeFiles/Lem_in.dir/requires
 

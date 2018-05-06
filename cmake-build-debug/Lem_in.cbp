@@ -83,6 +83,9 @@
 		<Unit filename="/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_add_parameters.c">
 			<Option target="Lem_in"/>
 		</Unit>
+		<Unit filename="/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_ants.c">
+			<Option target="Lem_in"/>
+		</Unit>
 		<Unit filename="/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_check.c">
 			<Option target="Lem_in"/>
 		</Unit>
@@ -99,6 +102,9 @@
 			<Option target="Lem_in"/>
 		</Unit>
 		<Unit filename="/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_read_args.c">
+			<Option target="Lem_in"/>
+		</Unit>
+		<Unit filename="/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_sort_ways.c">
 			<Option target="Lem_in"/>
 		</Unit>
 		<Unit filename="/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_ways.c">

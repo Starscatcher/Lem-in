@@ -21,13 +21,15 @@
 
 typedef struct			s_road
 {
+  int				ant;
   char				*name;
   struct s_road		*next;
+  struct s_road		*prev;
 }						t_road;
 
 typedef struct			s_ways
 {
-  int				*way;
+  int				ants;
   int				len;
   struct s_road		*road;
   struct s_ways		*next;
@@ -57,6 +59,10 @@ typedef struct			s_room
 	struct s_room	*next;
 }						t_room;
 
+void					ft_move_ants(t_ways *ways, t_data *data);
+void					ft_sort_ways(t_ways *ways);
+void					ft_del_last_lst(t_ways *ways);
+void					ft_set_ants(t_data *data, t_ways *ways);
 t_road					*ft_create_road(t_road *road);
 char					*ft_find_name(t_room *room, int ind);
 int 					ft_find_index(t_room *room, char *name);

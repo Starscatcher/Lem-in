@@ -5,12 +5,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_add_parameters.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/ft_add_parameters.c.o"
+  "/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_ants.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o"
   "/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_check.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/ft_check.c.o"
   "/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_create_lst.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/ft_create_lst.c.o"
   "/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_distance.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/ft_distance.c.o"
   "/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_error.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/ft_error.c.o"
   "/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_links_matrix.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/ft_links_matrix.c.o"
   "/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_read_args.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/ft_read_args.c.o"
+  "/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_sort_ways.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o"
   "/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_ways.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/ft_ways.c.o"
   "/Users/aryabenk/projects/Lem_in/ft_lem_in/main.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/ft_lem_in/main.c.o"
   "/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_atoi.c" "/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles/Lem_in.dir/libftprintf/libft/ft_atoi.c.o"

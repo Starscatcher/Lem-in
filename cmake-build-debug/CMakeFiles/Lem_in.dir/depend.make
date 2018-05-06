@@ -5,6 +5,10 @@ CMakeFiles/Lem_in.dir/ft_lem_in/ft_add_parameters.c.o: ../ft_lem_in/ft_add_param
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_add_parameters.c.o: ../ft_lem_in/lem_in.h
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_add_parameters.c.o: ../libftprintf/libft/libft.h
 
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o: ../ft_lem_in/ft_ants.c
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o: ../ft_lem_in/lem_in.h
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o: ../libftprintf/libft/libft.h
+
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_check.c.o: ../ft_lem_in/ft_check.c
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_check.c.o: ../ft_lem_in/lem_in.h
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_check.c.o: ../libftprintf/libft/libft.h
@@ -28,6 +32,10 @@ CMakeFiles/Lem_in.dir/ft_lem_in/ft_links_matrix.c.o: ../libftprintf/libft/libft.
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_read_args.c.o: ../ft_lem_in/ft_read_args.c
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_read_args.c.o: ../ft_lem_in/lem_in.h
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_read_args.c.o: ../libftprintf/libft/libft.h
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o: ../ft_lem_in/ft_sort_ways.c
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o: ../ft_lem_in/lem_in.h
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o: ../libftprintf/libft/libft.h
 
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_ways.c.o: ../ft_lem_in/ft_ways.c
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_ways.c.o: ../ft_lem_in/lem_in.h

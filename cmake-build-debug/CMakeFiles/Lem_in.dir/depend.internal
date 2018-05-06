@@ -5,6 +5,10 @@ CMakeFiles/Lem_in.dir/ft_lem_in/ft_add_parameters.c.o
  /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_add_parameters.c
  /Users/aryabenk/projects/Lem_in/ft_lem_in/lem_in.h
  /Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o
+ /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_ants.c
+ /Users/aryabenk/projects/Lem_in/ft_lem_in/lem_in.h
+ /Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_check.c.o
  /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_check.c
  /Users/aryabenk/projects/Lem_in/ft_lem_in/lem_in.h
@@ -27,6 +31,10 @@ CMakeFiles/Lem_in.dir/ft_lem_in/ft_links_matrix.c.o
  /Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_read_args.c.o
  /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_read_args.c
+ /Users/aryabenk/projects/Lem_in/ft_lem_in/lem_in.h
+ /Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o
+ /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_sort_ways.c
  /Users/aryabenk/projects/Lem_in/ft_lem_in/lem_in.h
  /Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_ways.c.o

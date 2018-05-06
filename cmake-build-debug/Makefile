@@ -150,6 +150,33 @@ ft_lem_in/ft_add_parameters.c.s:
 	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_add_parameters.c.s
 .PHONY : ft_lem_in/ft_add_parameters.c.s
 
+ft_lem_in/ft_ants.o: ft_lem_in/ft_ants.c.o
+
+.PHONY : ft_lem_in/ft_ants.o
+
+# target to build an object file
+ft_lem_in/ft_ants.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o
+.PHONY : ft_lem_in/ft_ants.c.o
+
+ft_lem_in/ft_ants.i: ft_lem_in/ft_ants.c.i
+
+.PHONY : ft_lem_in/ft_ants.i
+
+# target to preprocess a source file
+ft_lem_in/ft_ants.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.i
+.PHONY : ft_lem_in/ft_ants.c.i
+
+ft_lem_in/ft_ants.s: ft_lem_in/ft_ants.c.s
+
+.PHONY : ft_lem_in/ft_ants.s
+
+# target to generate assembly for a file
+ft_lem_in/ft_ants.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.s
+.PHONY : ft_lem_in/ft_ants.c.s
+
 ft_lem_in/ft_check.o: ft_lem_in/ft_check.c.o
 
 .PHONY : ft_lem_in/ft_check.o
@@ -311,6 +338,33 @@ ft_lem_in/ft_read_args.s: ft_lem_in/ft_read_args.c.s
 ft_lem_in/ft_read_args.c.s:
 	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_read_args.c.s
 .PHONY : ft_lem_in/ft_read_args.c.s
+
+ft_lem_in/ft_sort_ways.o: ft_lem_in/ft_sort_ways.c.o
+
+.PHONY : ft_lem_in/ft_sort_ways.o
+
+# target to build an object file
+ft_lem_in/ft_sort_ways.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o
+.PHONY : ft_lem_in/ft_sort_ways.c.o
+
+ft_lem_in/ft_sort_ways.i: ft_lem_in/ft_sort_ways.c.i
+
+.PHONY : ft_lem_in/ft_sort_ways.i
+
+# target to preprocess a source file
+ft_lem_in/ft_sort_ways.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.i
+.PHONY : ft_lem_in/ft_sort_ways.c.i
+
+ft_lem_in/ft_sort_ways.s: ft_lem_in/ft_sort_ways.c.s
+
+.PHONY : ft_lem_in/ft_sort_ways.s
+
+# target to generate assembly for a file
+ft_lem_in/ft_sort_ways.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.s
+.PHONY : ft_lem_in/ft_sort_ways.c.s
 
 ft_lem_in/ft_ways.o: ft_lem_in/ft_ways.c.o
 
@@ -2673,6 +2727,9 @@ help:
 	@echo "... ft_lem_in/ft_add_parameters.o"
 	@echo "... ft_lem_in/ft_add_parameters.i"
 	@echo "... ft_lem_in/ft_add_parameters.s"
+	@echo "... ft_lem_in/ft_ants.o"
+	@echo "... ft_lem_in/ft_ants.i"
+	@echo "... ft_lem_in/ft_ants.s"
 	@echo "... ft_lem_in/ft_check.o"
 	@echo "... ft_lem_in/ft_check.i"
 	@echo "... ft_lem_in/ft_check.s"
@@ -2691,6 +2748,9 @@ help:
 	@echo "... ft_lem_in/ft_read_args.o"
 	@echo "... ft_lem_in/ft_read_args.i"
 	@echo "... ft_lem_in/ft_read_args.s"
+	@echo "... ft_lem_in/ft_sort_ways.o"
+	@echo "... ft_lem_in/ft_sort_ways.i"
+	@echo "... ft_lem_in/ft_sort_ways.s"
 	@echo "... ft_lem_in/ft_ways.o"
 	@echo "... ft_lem_in/ft_ways.i"
 	@echo "... ft_lem_in/ft_ways.s"

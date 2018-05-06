@@ -93,6 +93,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Lem_in.dir/ft_lem_in/ft_ways.c.o"
   "CMakeFiles/Lem_in.dir/libftprintf/libft/ft_return_smaller.c.o"
   "CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o"
+  "CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o"
+  "CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o"
   "Lem_in.pdb"
   "Lem_in"
 )

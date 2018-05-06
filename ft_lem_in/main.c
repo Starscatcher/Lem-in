@@ -26,10 +26,8 @@ int	main(void)
 	ways = ft_create_ways(ways);
 	ft_search_distance(data, room);
 	ft_find_ways(data, room, ways);
-/*	for (int j = 0; j < data->len; ++j) {
-		for (int k = 0; k < data->len; ++k) {
-			ft_printf("%d ", data->length[j][k]);
-		}
-		ft_printf("\n");
-	}*/
+	ft_del_last_lst(ways);
+	ft_sort_ways(ways);
+	ft_set_ants(data, ways);
+	ft_move_ants(ways, data);
 }
