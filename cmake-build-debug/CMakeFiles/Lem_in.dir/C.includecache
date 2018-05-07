@@ -36,6 +36,10 @@ lem_in.h
 lem_in.h
 /Users/aryabenk/projects/Lem_in/ft_lem_in/lem_in.h
 
+/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_lst_del.c
+lem_in.h
+/Users/aryabenk/projects/Lem_in/ft_lem_in/lem_in.h
+
 /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_read_args.c
 lem_in.h
 /Users/aryabenk/projects/Lem_in/ft_lem_in/lem_in.h
@@ -73,6 +77,14 @@ libft.h
 /Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
 
 /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_char_replace.c
+libft.h
+/Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
+
+/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_del_doubleint.c
+libft.h
+/Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
+
+/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_del_doublestr.c
 libft.h
 /Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
 
@@ -217,6 +229,10 @@ libft.h
 /Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
 
 /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_putstr_fd.c
+libft.h
+/Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
+
+/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_reallcat.c
 libft.h
 /Users/aryabenk/projects/Lem_in/libftprintf/libft/libft.h
 

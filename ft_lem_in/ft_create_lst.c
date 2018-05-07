@@ -36,7 +36,10 @@ t_data	*ft_create_data(t_data *data)
 	data->length = NULL;
 	data->indend = 0;
 	data->indstart = 0;
+	data->map = NULL;
 	data->size = 0;
+	data->room = NULL;
+	data->ways = NULL;
 	return (data);
 }
 

@@ -2361,6 +2361,102 @@ CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.provides: CMakeFiles/Lem_in.dir
 CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.provides.build: CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o
 
 
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o: CMakeFiles/Lem_in.dir/flags.make
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o: ../ft_lem_in/ft_lst_del.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o   -c /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_lst_del.c
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_lst_del.c > CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.i
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aryabenk/projects/Lem_in/ft_lem_in/ft_lst_del.c -o CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.s
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o.requires:
+
+.PHONY : CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o.requires
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o.provides: CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o.requires
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o.provides.build
+.PHONY : CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o.provides
+
+CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o.provides.build: CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o
+
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o: CMakeFiles/Lem_in.dir/flags.make
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o: ../libftprintf/libft/ft_del_doubleint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o   -c /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_del_doubleint.c
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_del_doubleint.c > CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.i
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_del_doubleint.c -o CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.s
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o.requires:
+
+.PHONY : CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o.requires
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o.provides: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o.requires
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o.provides.build
+.PHONY : CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o.provides
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o.provides.build: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o
+
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o: CMakeFiles/Lem_in.dir/flags.make
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o: ../libftprintf/libft/ft_del_doublestr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o   -c /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_del_doublestr.c
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_del_doublestr.c > CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.i
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_del_doublestr.c -o CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.s
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o.requires:
+
+.PHONY : CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o.requires
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o.provides: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o.requires
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o.provides.build
+.PHONY : CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o.provides
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o.provides.build: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o
+
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o: CMakeFiles/Lem_in.dir/flags.make
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o: ../libftprintf/libft/ft_reallcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o   -c /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_reallcat.c
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_reallcat.c > CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.i
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_reallcat.c -o CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.s
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o.requires:
+
+.PHONY : CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o.requires
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o.provides: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o.requires
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o.provides.build
+.PHONY : CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o.provides
+
+CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o.provides.build: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o
+
+
 # Object files for target Lem_in
 Lem_in_OBJECTS = \
 "CMakeFiles/Lem_in.dir/ft_lem_in/ft_add_parameters.c.o" \
@@ -2458,7 +2554,11 @@ Lem_in_OBJECTS = \
 "CMakeFiles/Lem_in.dir/libftprintf/libft/ft_return_smaller.c.o" \
 "CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o" \
 "CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o" \
-"CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o"
+"CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o" \
+"CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o" \
+"CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o" \
+"CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o" \
+"CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o"
 
 # External object files for target Lem_in
 Lem_in_EXTERNAL_OBJECTS =
@@ -2559,9 +2659,13 @@ Lem_in: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_return_smaller.c.o
 Lem_in: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o
 Lem_in: CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o
 Lem_in: CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o
+Lem_in: CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o
+Lem_in: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o
+Lem_in: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o
+Lem_in: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o
 Lem_in: CMakeFiles/Lem_in.dir/build.make
 Lem_in: CMakeFiles/Lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Linking C executable Lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aryabenk/projects/Lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Linking C executable Lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2665,6 +2769,10 @@ CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_retur
 CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_int_reverse.c.o.requires
 CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/ft_lem_in/ft_ants.c.o.requires
 CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/ft_lem_in/ft_sort_ways.c.o.requires
+CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o.requires
+CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o.requires
+CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o.requires
+CMakeFiles/Lem_in.dir/requires: CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o.requires
 
 .PHONY : CMakeFiles/Lem_in.dir/requires
 

@@ -12,108 +12,106 @@
 
 #include "lem_in.h"
 
-int		ft_start_end(int *k, char *line, t_room *room, int fd)
+char	*ft_find_room(char *line, int fd, t_data *data)
 {
-	if (*k)
-		ft_print_error(1, "More than one start/end");
-	if (!get_next_line(fd, &line))
-		ft_print_error(1, "Not valid start/end");
-	ft_room_error(line);
-	room = ft_add_rooms(line, room);
-	return (++*k);
+	t_room	*copy;
+	int		se;
+
+	se = 0;
+	while (get_next_line(fd, &line) && ft_room_error(line, data) != 2)
+	{
+		data->map = ft_reallcat(data->map, line);
+		data->map = ft_reallcat(data->map, "\n");
+		if (line && (!ft_strcmp(line, "##start")))
+			se = se == 0 ? 1 :	ft_print_error(1, "Doesn't valid start/end");
+		else if (line && !ft_strcmp(line, "##end"))
+			se = se == 0 ? 2 :	ft_print_error(1, "Doesn't valid start/end");
+		if (ft_room_error(line, data) == 1)
+		{
+			if (!data->room)
+			{
+				data->room = ft_create_room(data->room);
+				copy = data->room;
+			}
+			else
+			{
+				data->room->next = ft_create_room(data->room);
+				data->room = data->room->next;
+			}
+			ft_add_rooms(line, &se, data, copy);
+		}
+		ft_strdel(&line);
+	}
+	data->room = copy;
+	return (line);
 }
 
-int		**ft_find_links(char *line, int fd, t_room *room, int len)
+int		**ft_find_links(char *line, int fd, t_room *room, t_data *data)
 {
 	int		**matrix;
 	char	**links;
 
-	links = NULL;
-	matrix = ft_make_matrix(matrix, len, 0);
-	links = ft_link_error(line, fd);
+	matrix = ft_make_matrix(NULL, data->len, 0);
+	links = ft_link_error(&line, fd, data);
+	data->map = ft_reallcat(data->map, line);
+	data->map = ft_reallcat(data->map, "\n");
 	matrix[ft_find_ind(links[0], room)][ft_find_ind(links[1], room)] = 1;
 	matrix[ft_find_ind(links[1], room)][ft_find_ind(links[0], room)] = 1;
+	ft_strdel(&line);
+	ft_del_doublestr(&links);
 	while (get_next_line(fd, &line))
 	{
-		links = ft_link_error(line, fd);
+		links = ft_link_error(&line, fd, data);
+		data->map = ft_reallcat(data->map, line);
+		data->map = ft_reallcat(data->map, "\n");
 		matrix[ft_find_ind(links[0], room)][ft_find_ind(links[1], room)] = 1;
 		matrix[ft_find_ind(links[1], room)][ft_find_ind(links[0], room)] = 1;
+		ft_strdel(&line);
+		ft_del_doublestr(&links);
 	}
 	return (matrix);
 }
 
-t_room	*ft_find_room(char *line, int fd, t_room *room, t_data *data)
-{
-	int		start;
-	int		end;
-	t_room	*copy;
-
-	start = 0;
-	end = 0;
-	while (get_next_line(fd, &line))
-	{
-		if (!room)
-		{
-			room = ft_create_room(room);
-			copy = room;
-		}
-		if (ft_room_error(line) == 2)
-		{
-			data->len = ft_check_room_len(copy);
-			data->matrix = ft_find_links(line, fd, copy, data->len);
-			break ;
-		}
-		else if (ft_room_error(line))
-		{
-			room->next = ft_create_room(room);
-			room = room->next;
-		}
-		if (line && !ft_strcmp(line, "##start"))
-		{
-			room->start = ft_start_end(&start, line, room, fd);
-			data->start = ft_strdup(room->name);
-		}
-		else if (!ft_strcmp(line, "##end"))
-		{
-			if (!end)
-			{
-				room->next = ft_create_room(room);
-				room = room->next;
-			}
-			room->end = !ft_start_end(&end, line, room, fd);
-			data->end = ft_strdup(room->name);
-		}
-		else if (ft_room_error(line) == 1)
-			ft_add_rooms(line, room);
-	}
-	return (copy);
-}
-
-int		ft_find_ants(char *line, int fd)
+int		ft_find_ants(char **line, int fd, t_data *data)
 {
 	int ants;
 
 	ants = 0;
-	get_next_line(fd, &line);
-	if (!line)
-		ft_print_error(1, "Map is empty");
-	while (!ants)
+	while (!ants && get_next_line(fd, line))
 	{
-		while (line[0] == '#' && line[1] != '#')
-			get_next_line(fd, &line);
-		if (!ft_check_strdigit(line))
-			ft_print_error(1, "Not valid count of ants");
-		ants = ft_atoi(line);
+		if (!*line)
+			ft_print_error(1, "Map is empty");
+		data->map = ft_reallcat(data->map, *line);
+		data->map = ft_reallcat(data->map, "\n");
+		if ((*line)[0] == '#' && (*line)[1] != '#')
+			ft_strdel(line);
+		else if (ft_check_strdigit(*line))
+			ants = (int)ft_atoi(*line);
+		else if (!ft_check_strdigit(*line))
+		{
+			ft_strdel(line);
+			ft_print_error(1, "Number of ants should be integer");
+		}
 	}
+	ft_strdel(line);
 	return (ants);
 }
 
-t_room	*ft_read(char *line, t_room *room, t_data *data)
+t_room	*ft_read(char *line, t_data *data)
 {
 	int fd;
 
 	fd = open("../1", O_RDONLY);
-	data->ants = ft_find_ants(line, fd);
-	room = ft_find_room(line, fd, room, data);
-	return (room);
+	if (!(data->ants = ft_find_ants(&line, fd, data)))
+		ft_print_error(1, "Ants are absent");
+	line = ft_find_room(line, fd, data);
+	if (!data->start || !data->end)
+	{
+		ft_strdel(&line);
+		ft_del_data(&data);
+		ft_print_error(1, "There is no start/end");
+	}
+	data->len = ft_check_room_len(data->room);
+	data->matrix = ft_find_links(line, fd, data->room, data);
+	return (data->room);
 }

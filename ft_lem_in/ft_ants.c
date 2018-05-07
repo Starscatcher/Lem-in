@@ -63,10 +63,8 @@ int 	ft_is_ant(t_ways *ways)
 void	ft_move_ants(t_ways *ways, t_data *data)
 {
 	t_ways	*head;
-	t_road	*rhead;
 	int ant;
 	int tmp;
-	int tmp2;
 
 	ant = 1;
 	tmp = 0;

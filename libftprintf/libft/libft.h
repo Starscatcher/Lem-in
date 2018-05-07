@@ -21,6 +21,9 @@
 
 # define BUFF_SIZE 1
 
+char				*ft_reallcat(char *s1, char *s2);
+void				ft_del_doublestr(char ***arr);
+void				ft_del_doubleint(int **arr, int len);
 int					*ft_int_reverse(int *arr, int len);
 int 				ft_return_smaller(int count, int a);
 void				ft_intdel(int **arr);

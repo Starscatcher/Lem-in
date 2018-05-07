@@ -312,6 +312,33 @@ ft_lem_in/ft_links_matrix.c.s:
 	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_links_matrix.c.s
 .PHONY : ft_lem_in/ft_links_matrix.c.s
 
+ft_lem_in/ft_lst_del.o: ft_lem_in/ft_lst_del.c.o
+
+.PHONY : ft_lem_in/ft_lst_del.o
+
+# target to build an object file
+ft_lem_in/ft_lst_del.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.o
+.PHONY : ft_lem_in/ft_lst_del.c.o
+
+ft_lem_in/ft_lst_del.i: ft_lem_in/ft_lst_del.c.i
+
+.PHONY : ft_lem_in/ft_lst_del.i
+
+# target to preprocess a source file
+ft_lem_in/ft_lst_del.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.i
+.PHONY : ft_lem_in/ft_lst_del.c.i
+
+ft_lem_in/ft_lst_del.s: ft_lem_in/ft_lst_del.c.s
+
+.PHONY : ft_lem_in/ft_lst_del.s
+
+# target to generate assembly for a file
+ft_lem_in/ft_lst_del.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/ft_lem_in/ft_lst_del.c.s
+.PHONY : ft_lem_in/ft_lst_del.c.s
+
 ft_lem_in/ft_read_args.o: ft_lem_in/ft_read_args.c.o
 
 .PHONY : ft_lem_in/ft_read_args.o
@@ -500,6 +527,60 @@ libftprintf/libft/ft_char_replace.s: libftprintf/libft/ft_char_replace.c.s
 libftprintf/libft/ft_char_replace.c.s:
 	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_char_replace.c.s
 .PHONY : libftprintf/libft/ft_char_replace.c.s
+
+libftprintf/libft/ft_del_doubleint.o: libftprintf/libft/ft_del_doubleint.c.o
+
+.PHONY : libftprintf/libft/ft_del_doubleint.o
+
+# target to build an object file
+libftprintf/libft/ft_del_doubleint.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.o
+.PHONY : libftprintf/libft/ft_del_doubleint.c.o
+
+libftprintf/libft/ft_del_doubleint.i: libftprintf/libft/ft_del_doubleint.c.i
+
+.PHONY : libftprintf/libft/ft_del_doubleint.i
+
+# target to preprocess a source file
+libftprintf/libft/ft_del_doubleint.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.i
+.PHONY : libftprintf/libft/ft_del_doubleint.c.i
+
+libftprintf/libft/ft_del_doubleint.s: libftprintf/libft/ft_del_doubleint.c.s
+
+.PHONY : libftprintf/libft/ft_del_doubleint.s
+
+# target to generate assembly for a file
+libftprintf/libft/ft_del_doubleint.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doubleint.c.s
+.PHONY : libftprintf/libft/ft_del_doubleint.c.s
+
+libftprintf/libft/ft_del_doublestr.o: libftprintf/libft/ft_del_doublestr.c.o
+
+.PHONY : libftprintf/libft/ft_del_doublestr.o
+
+# target to build an object file
+libftprintf/libft/ft_del_doublestr.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.o
+.PHONY : libftprintf/libft/ft_del_doublestr.c.o
+
+libftprintf/libft/ft_del_doublestr.i: libftprintf/libft/ft_del_doublestr.c.i
+
+.PHONY : libftprintf/libft/ft_del_doublestr.i
+
+# target to preprocess a source file
+libftprintf/libft/ft_del_doublestr.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.i
+.PHONY : libftprintf/libft/ft_del_doublestr.c.i
+
+libftprintf/libft/ft_del_doublestr.s: libftprintf/libft/ft_del_doublestr.c.s
+
+.PHONY : libftprintf/libft/ft_del_doublestr.s
+
+# target to generate assembly for a file
+libftprintf/libft/ft_del_doublestr.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_del_doublestr.c.s
+.PHONY : libftprintf/libft/ft_del_doublestr.c.s
 
 libftprintf/libft/ft_inddel.o: libftprintf/libft/ft_inddel.c.o
 
@@ -1472,6 +1553,33 @@ libftprintf/libft/ft_putstr_fd.s: libftprintf/libft/ft_putstr_fd.c.s
 libftprintf/libft/ft_putstr_fd.c.s:
 	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_putstr_fd.c.s
 .PHONY : libftprintf/libft/ft_putstr_fd.c.s
+
+libftprintf/libft/ft_reallcat.o: libftprintf/libft/ft_reallcat.c.o
+
+.PHONY : libftprintf/libft/ft_reallcat.o
+
+# target to build an object file
+libftprintf/libft/ft_reallcat.c.o:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.o
+.PHONY : libftprintf/libft/ft_reallcat.c.o
+
+libftprintf/libft/ft_reallcat.i: libftprintf/libft/ft_reallcat.c.i
+
+.PHONY : libftprintf/libft/ft_reallcat.i
+
+# target to preprocess a source file
+libftprintf/libft/ft_reallcat.c.i:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.i
+.PHONY : libftprintf/libft/ft_reallcat.c.i
+
+libftprintf/libft/ft_reallcat.s: libftprintf/libft/ft_reallcat.c.s
+
+.PHONY : libftprintf/libft/ft_reallcat.s
+
+# target to generate assembly for a file
+libftprintf/libft/ft_reallcat.c.s:
+	$(MAKE) -f CMakeFiles/Lem_in.dir/build.make CMakeFiles/Lem_in.dir/libftprintf/libft/ft_reallcat.c.s
+.PHONY : libftprintf/libft/ft_reallcat.c.s
 
 libftprintf/libft/ft_realloc.o: libftprintf/libft/ft_realloc.c.o
 
@@ -2745,6 +2853,9 @@ help:
 	@echo "... ft_lem_in/ft_links_matrix.o"
 	@echo "... ft_lem_in/ft_links_matrix.i"
 	@echo "... ft_lem_in/ft_links_matrix.s"
+	@echo "... ft_lem_in/ft_lst_del.o"
+	@echo "... ft_lem_in/ft_lst_del.i"
+	@echo "... ft_lem_in/ft_lst_del.s"
 	@echo "... ft_lem_in/ft_read_args.o"
 	@echo "... ft_lem_in/ft_read_args.i"
 	@echo "... ft_lem_in/ft_read_args.s"
@@ -2766,6 +2877,12 @@ help:
 	@echo "... libftprintf/libft/ft_char_replace.o"
 	@echo "... libftprintf/libft/ft_char_replace.i"
 	@echo "... libftprintf/libft/ft_char_replace.s"
+	@echo "... libftprintf/libft/ft_del_doubleint.o"
+	@echo "... libftprintf/libft/ft_del_doubleint.i"
+	@echo "... libftprintf/libft/ft_del_doubleint.s"
+	@echo "... libftprintf/libft/ft_del_doublestr.o"
+	@echo "... libftprintf/libft/ft_del_doublestr.i"
+	@echo "... libftprintf/libft/ft_del_doublestr.s"
 	@echo "... libftprintf/libft/ft_inddel.o"
 	@echo "... libftprintf/libft/ft_inddel.i"
 	@echo "... libftprintf/libft/ft_inddel.s"
@@ -2874,6 +2991,9 @@ help:
 	@echo "... libftprintf/libft/ft_putstr_fd.o"
 	@echo "... libftprintf/libft/ft_putstr_fd.i"
 	@echo "... libftprintf/libft/ft_putstr_fd.s"
+	@echo "... libftprintf/libft/ft_reallcat.o"
+	@echo "... libftprintf/libft/ft_reallcat.i"
+	@echo "... libftprintf/libft/ft_reallcat.s"
 	@echo "... libftprintf/libft/ft_realloc.o"
 	@echo "... libftprintf/libft/ft_realloc.i"
 	@echo "... libftprintf/libft/ft_realloc.s"

@@ -101,6 +101,9 @@
 		<Unit filename="/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_links_matrix.c">
 			<Option target="Lem_in"/>
 		</Unit>
+		<Unit filename="/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_lst_del.c">
+			<Option target="Lem_in"/>
+		</Unit>
 		<Unit filename="/Users/aryabenk/projects/Lem_in/ft_lem_in/ft_read_args.c">
 			<Option target="Lem_in"/>
 		</Unit>
@@ -123,6 +126,12 @@
 			<Option target="Lem_in"/>
 		</Unit>
 		<Unit filename="/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_char_replace.c">
+			<Option target="Lem_in"/>
+		</Unit>
+		<Unit filename="/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_del_doubleint.c">
+			<Option target="Lem_in"/>
+		</Unit>
+		<Unit filename="/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_del_doublestr.c">
 			<Option target="Lem_in"/>
 		</Unit>
 		<Unit filename="/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_inddel.c">
@@ -231,6 +240,9 @@
 			<Option target="Lem_in"/>
 		</Unit>
 		<Unit filename="/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_putstr_fd.c">
+			<Option target="Lem_in"/>
+		</Unit>
+		<Unit filename="/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_reallcat.c">
 			<Option target="Lem_in"/>
 		</Unit>
 		<Unit filename="/Users/aryabenk/projects/Lem_in/libftprintf/libft/ft_realloc.c">

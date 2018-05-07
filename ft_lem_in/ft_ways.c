@@ -57,8 +57,8 @@ int	*ft_build_way(t_data *data, int ind, int *way, int *i)
 		ft_zero(data, ind);
 		ind = min;
 	}
-	if (ind == -1)
-		ft_intdel(&way);
+	//if (ind == -1)
+	//	ft_intdel(&way);
 	return (way);
 }
 
@@ -87,7 +87,7 @@ void	ft_write_ways(t_ways *ways, t_room *room, int *way)
 
 void	ft_del_last_lst(t_ways *ways)
 {
-	while (ways->next->next)
+	while (ways && ways->next->next)
 		ways = ways->next;
 	free(ways->next);
 	ways->next = NULL;
@@ -117,5 +117,6 @@ void	ft_find_ways(t_data *data, t_room *room, t_ways *ways)
 			ways->next = ft_create_ways(ways->next);
 			ways = ways->next;
 		}
+		ft_intdel(&way);
 	}
 }

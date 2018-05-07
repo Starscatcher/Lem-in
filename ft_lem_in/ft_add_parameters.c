@@ -12,12 +12,33 @@
 
 #include "lem_in.h"
 
-t_room	*ft_add_rooms(char *line, t_room *room)
+t_room	*ft_add_rooms(char *line, int *se, t_data *data, t_room *room)
 {
-	char	**param;
+	char	**args;
+	int i;
 
-	param = ft_strsplit(line, ' ');
-	room->name = ft_strdup(param[0]);
-	room->x = ft_atoi(param[1]);
-	room->y = ft_atoi(param[2]);
+	args = ft_strsplit(line, ' ');
+	i = ft_check_room(room, args[0], ft_atoi(args[1]), ft_atoi(args[2]));
+	if (i < 2)
+	{
+		ft_strdel(&line);
+		ft_del_data(&data);
+		i == 0 ? ft_print_error(1, "Room name already exist") : \
+				ft_print_error(1, "Room coordinate already exist");
+	}
+	data->room->name = ft_strdup(args[0]);
+	data->room->x = (int)ft_atoi(args[1]);
+	data->room->y = (int)ft_atoi(args[2]);
+	if (*se == 1)
+	{
+		data->room->start++;
+		data->start = ft_strdup(data->room->name);
+	}
+	else if (*se == 2)
+	{
+		data->room->end++;
+		data->end = ft_strdup(data->room->name);
+	}
+	*se = 0;
+	ft_del_doublestr(&args);
 }

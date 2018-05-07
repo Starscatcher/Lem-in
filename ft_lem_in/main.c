@@ -22,12 +22,14 @@ int	main(void)
 	room = NULL;
 	line = NULL;
 	data = ft_create_data(data);
-	room = ft_read(line, room, data);
-	ways = ft_create_ways(ways);
-	ft_search_distance(data, room);
-	ft_find_ways(data, room, ways);
-	ft_del_last_lst(ways);
-	ft_sort_ways(ways);
-	ft_set_ants(data, ways);
-	ft_move_ants(ways, data);
+	data->room = ft_read(line, data);
+	data->ways = ft_create_ways(ways);
+	ft_search_distance(data, data->room);
+	ft_find_ways(data, data->room, data->ways);
+	ft_del_last_lst(data->ways);
+	ft_sort_ways(data->ways);
+	ft_set_ants(data, data->ways);
+	ft_move_ants(data->ways, data);
+	ft_del_data(&data);
+	system("leaks Lem_in");
 }

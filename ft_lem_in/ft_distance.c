@@ -89,6 +89,7 @@ void	ft_length_matrix(t_data *data, int len, int count, int ind)
         }
         i = 0;
     }
+	ft_intdel(&arr);
 }
 
 void	ft_search_distance(t_data *data, t_room *room)
