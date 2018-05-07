@@ -5,7 +5,7 @@ void	ft_del_road(t_road *road)
 {
 	t_road	*copy;
 
-	while(road)
+	while (road)
 	{
 		copy = road->next;
 		ft_strdel(&road->name);
@@ -18,7 +18,7 @@ void	ft_del_ways(t_ways *ways)
 {
 	t_ways *copy;
 
-	while(ways)
+	while (ways)
 	{
 		copy = ways->next;
 		ft_del_road(ways->road);
@@ -31,7 +31,7 @@ void	ft_del_room(t_room *room)
 {
 	t_room	*copy;
 
-	while(room)
+	while (room)
 	{
 		copy = room->next;
 		ft_strdel(&room->name);

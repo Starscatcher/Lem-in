@@ -1,7 +1,7 @@
 
 #include "lem_in.h"
 
-int 	ft_ind_min_int(t_data *data, int ind)
+int		ft_ind_min_int(t_data *data, int ind)
 {
 	int j;
 	int min;
@@ -43,30 +43,30 @@ void	ft_zero(t_data *data, int ind)
 	}
 }
 
-int	*ft_build_way(t_data *data, int ind, int *way, int *i)
+int		*ft_build_way(t_data *data, int ind, int *way, int *i)
 {
 	int min;
 
 	min = 0;
 	while (ind != data->indstart && ind != -1)
 	{
-		way = ft_int_realloc(way, *i, *i+1);
+		way = ft_int_realloc(way, *i, *i + 1);
 		way[*i] = ind;
 		++*i;
 		min = ft_ind_min_int(data, ind);
 		ft_zero(data, ind);
 		ind = min;
 	}
-	//if (ind == -1)
-	//	ft_intdel(&way);
+	if (ind == -1)
+		ft_intdel(&way);
 	return (way);
 }
 
 void	ft_write_ways(t_ways *ways, t_room *room, int *way)
 {
 	t_road	*new;
-	int size;
-	t_road *head;
+	int		size;
+	t_road	*head;
 
 	head = ways->road;
 	size = 0;
@@ -109,14 +109,14 @@ void	ft_find_ways(t_data *data, t_room *room, t_ways *ways)
 		data->length[data->indend][min] = 0;
 		data->length[min][data->indend] = 0;
 		way = ft_build_way(data, min, way, &i);
-		way = ft_int_reverse(way, i);
-		ways->len = i;
 		if (way != NULL)
 		{
+			way = ft_int_reverse(way, i);
+			ways->len = i;
 			ft_write_ways(ways, room, way);
 			ways->next = ft_create_ways(ways->next);
 			ways = ways->next;
+			ft_intdel(&way);
 		}
-		ft_intdel(&way);
 	}
 }

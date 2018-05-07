@@ -23,9 +23,9 @@ char	*ft_find_room(char *line, int fd, t_data *data)
 		data->map = ft_reallcat(data->map, line);
 		data->map = ft_reallcat(data->map, "\n");
 		if (line && (!ft_strcmp(line, "##start")))
-			se = se == 0 ? 1 :	ft_print_error(1, "Doesn't valid start/end");
+			se = se == 0 ? 1 : ft_print_error(1, "Doesn't valid start/end");
 		else if (line && !ft_strcmp(line, "##end"))
-			se = se == 0 ? 2 :	ft_print_error(1, "Doesn't valid start/end");
+			se = se == 0 ? 2 : ft_print_error(1, "Doesn't valid start/end");
 		if (ft_room_error(line, data) == 1)
 		{
 			if (!data->room)

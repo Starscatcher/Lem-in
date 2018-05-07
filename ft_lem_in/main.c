@@ -14,16 +14,13 @@
 
 int	main(void)
 {
-	t_room	*room;
 	t_data	*data;
-	t_ways	*ways;
 	char	*line;
 
-	room = NULL;
 	line = NULL;
 	data = ft_create_data(data);
 	data->room = ft_read(line, data);
-	data->ways = ft_create_ways(ways);
+	data->ways = ft_create_ways(NULL);
 	ft_search_distance(data, data->room);
 	ft_find_ways(data, data->room, data->ways);
 	ft_del_last_lst(data->ways);

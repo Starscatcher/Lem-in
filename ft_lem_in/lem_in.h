@@ -21,45 +21,45 @@
 
 typedef struct			s_road
 {
-  int				ant;
-  char				*name;
-  struct s_road		*next;
-  struct s_road		*prev;
+	int					ant;
+	char				*name;
+	struct s_road		*next;
+	struct s_road		*prev;
 }						t_road;
 
 typedef struct			s_ways
 {
-  int				ants;
-  int				len;
-  struct s_road		*road;
-  struct s_ways		*next;
+	int					ants;
+	int					len;
+	struct s_road		*road;
+	struct s_ways		*next;
 }						t_ways;
 
 typedef struct			s_room
 {
-  char				*name;
-  int				start;
-  int				end;
-  int				x;
-  int				y;
-  struct s_room		*next;
+	char				*name;
+	int					start;
+	int					end;
+	int					x;
+	int					y;
+	struct s_room		*next;
 }						t_room;
 
 typedef struct			s_data
 {
-	int	ants;
-	char *map;
-	int	**matrix;
-	int **length;
-  	int len;
-	char *start;
-	char *end;
-	int size;
-	int *num;
-	int indend;
-  	int indstart;
-  	t_room	*room;
-  	t_ways	*ways;
+	int					ants;
+	char 				*map;
+	int					**matrix;
+	int					**length;
+	int 				len;
+	char 				*start;
+	char 				*end;
+	int					size;
+	int 				*num;
+	int 				indend;
+	int 				indstart;
+	t_room				*room;
+	t_ways				*ways;
 }						t_data;
 
 int						ft_print_error(int i, char *str);
