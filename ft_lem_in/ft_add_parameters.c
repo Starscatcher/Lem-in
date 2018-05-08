@@ -12,10 +12,24 @@
 
 #include "lem_in.h"
 
-t_room	*ft_add_rooms(char *line, int *se, t_data *data, t_room *room)
+void	ft_save_start_end(int *se, t_data *data)
+{
+	if (*se == 1)
+	{
+		data->room->start++;
+		data->start = ft_strdup(data->room->name);
+	}
+	else if (*se == 2)
+	{
+		data->room->end++;
+		data->end = ft_strdup(data->room->name);
+	}
+}
+
+void	ft_add_rooms(char *line, int *se, t_data *data, t_room *room)
 {
 	char	**args;
-	int i;
+	int		i;
 
 	args = ft_strsplit(line, ' ');
 	i = ft_check_room(room, args[0], ft_atoi(args[1]), ft_atoi(args[2]));
@@ -29,16 +43,7 @@ t_room	*ft_add_rooms(char *line, int *se, t_data *data, t_room *room)
 	data->room->name = ft_strdup(args[0]);
 	data->room->x = (int)ft_atoi(args[1]);
 	data->room->y = (int)ft_atoi(args[2]);
-	if (*se == 1)
-	{
-		data->room->start++;
-		data->start = ft_strdup(data->room->name);
-	}
-	else if (*se == 2)
-	{
-		data->room->end++;
-		data->end = ft_strdup(data->room->name);
-	}
+	ft_save_start_end(se, data);
 	*se = 0;
 	ft_del_doublestr(&args);
 }

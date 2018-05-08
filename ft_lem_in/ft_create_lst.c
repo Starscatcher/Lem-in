@@ -24,6 +24,19 @@ t_room	*ft_create_room(t_room *room)
 	return (room);
 }
 
+t_flag	*ft_create_flag(t_flag *flag)
+{
+	flag = (t_flag*)malloc(sizeof(t_flag));
+	flag->w = 0;
+	flag->c = 0;
+	flag->h = 0;
+	flag->s = 0;
+	flag->l = 0;
+	flag->r = 0;
+	flag->o = 0;
+	return (flag);
+}
+
 t_data	*ft_create_data(t_data *data)
 {
 	data = (t_data*)malloc(sizeof(t_data));
@@ -40,6 +53,7 @@ t_data	*ft_create_data(t_data *data)
 	data->size = 0;
 	data->room = NULL;
 	data->ways = NULL;
+	data->flag = NULL;
 	return (data);
 }
 

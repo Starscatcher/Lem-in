@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ways.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aryabenk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/08 14:58:48 by aryabenk          #+#    #+#             */
+/*   Updated: 2018/05/08 14:58:49 by aryabenk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "lem_in.h"
 
@@ -47,7 +58,6 @@ int		*ft_build_way(t_data *data, int ind, int *way, int *i)
 {
 	int min;
 
-	min = 0;
 	while (ind != data->indstart && ind != -1)
 	{
 		way = ft_int_realloc(way, *i, *i + 1);
@@ -83,14 +93,6 @@ void	ft_write_ways(t_ways *ways, t_room *room, int *way)
 		size++;
 	}
 	ways->road = head;
-}
-
-void	ft_del_last_lst(t_ways *ways)
-{
-	while (ways && ways->next->next)
-		ways = ways->next;
-	free(ways->next);
-	ways->next = NULL;
 }
 
 void	ft_find_ways(t_data *data, t_room *room, t_ways *ways)

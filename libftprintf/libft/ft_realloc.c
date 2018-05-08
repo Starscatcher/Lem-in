@@ -20,7 +20,7 @@ char	*ft_realloc(char *ptr, size_t size)
 		return (NULL);
 	if (ptr)
 	{
-		ft_memcpy(newptr, ptr, size);
+		ft_strcpy(newptr, ptr);
 		ft_strdel(&ptr);
 	}
 	return (newptr);

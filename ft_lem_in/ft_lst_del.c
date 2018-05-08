@@ -1,5 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lst_del.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aryabenk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/08 15:04:45 by aryabenk          #+#    #+#             */
+/*   Updated: 2018/05/08 15:04:46 by aryabenk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "lem_in.h"
+
+void	ft_del_last_lst(t_ways *ways)
+{
+	while (ways && ways->next && ways->next->next)
+		ways = ways->next;
+	ways && ways->next ? ft_del_road(ways->next->road) : 0;
+	ways && ways->next ? free(ways->next) : 0;
+	ways->next = NULL;
+}
 
 void	ft_del_road(t_road *road)
 {

@@ -1,9 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_ways.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aryabenk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/08 14:57:06 by aryabenk          #+#    #+#             */
+/*   Updated: 2018/05/08 14:57:06 by aryabenk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "lem_in.h"
 
-int ft_ways_sort(t_ways *ways)
+int		ft_ways_sort(t_ways *ways)
 {
-	while(ways && ways->next)
+	while (ways && ways->next)
 	{
 		if (ways->len > ways->next->len)
 			return (0);
@@ -14,10 +25,10 @@ int ft_ways_sort(t_ways *ways)
 
 void	ft_sort_ways(t_ways *ways)
 {
-	t_ways *head;
-	int a;
-	int l;
-	t_road *r;
+	t_ways	*head;
+	int		a;
+	int		l;
+	t_road	*r;
 
 	head = ways;
 	while (!ft_ways_sort(head))

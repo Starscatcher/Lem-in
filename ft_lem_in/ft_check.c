@@ -25,7 +25,7 @@ char	*ft_find_name(t_room *room, int ind)
 	return (room->name);
 }
 
-int ft_find_index(t_room *room, char *name)
+int		ft_find_index(t_room *room, char *name)
 {
 	int ind;
 
@@ -38,7 +38,7 @@ int ft_find_index(t_room *room, char *name)
 	return (ind);
 }
 
-int	ft_check_strdigit(char *arr)
+int		ft_check_strdigit(char *arr)
 {
 	int i;
 
@@ -52,7 +52,7 @@ int	ft_check_strdigit(char *arr)
 	return (i);
 }
 
-int	ft_check_arr_len(char **arr)
+int		ft_check_arr_len(char **arr)
 {
 	int i;
 
@@ -62,7 +62,7 @@ int	ft_check_arr_len(char **arr)
 	return (i);
 }
 
-int	ft_check_room_len(t_room *room)
+int		ft_check_room_len(t_room *room)
 {
 	int len;
 

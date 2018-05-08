@@ -12,27 +12,29 @@
 
 #include "lem_in.h"
 
-char	*ft_find_room(char *line, int fd, t_data *data)
+static t_room	*ft_make_data(t_room *room, t_room **copy)
+{
+	room = ft_create_room(room);
+	*copy = room;
+	return (room);
+}
+
+char			*ft_find_room(char *line, int fd, t_data *data)
 {
 	t_room	*copy;
 	int		se;
 
+	copy = NULL;
 	se = 0;
-	while (get_next_line(fd, &line) && ft_room_error(line, data) != 2)
+	while (get_next_line(fd, &line) && ft_room_error(line) != 2)
 	{
 		data->map = ft_reallcat(data->map, line);
 		data->map = ft_reallcat(data->map, "\n");
-		if (line && (!ft_strcmp(line, "##start")))
-			se = se == 0 ? 1 : ft_print_error(1, "Doesn't valid start/end");
-		else if (line && !ft_strcmp(line, "##end"))
-			se = se == 0 ? 2 : ft_print_error(1, "Doesn't valid start/end");
-		if (ft_room_error(line, data) == 1)
+		ft_start_end_error(line, &se);
+		if (ft_room_error(line) == 1)
 		{
 			if (!data->room)
-			{
-				data->room = ft_create_room(data->room);
-				copy = data->room;
-			}
+				data->room = ft_make_data(data->room, &copy);
 			else
 			{
 				data->room->next = ft_create_room(data->room);
@@ -46,7 +48,7 @@ char	*ft_find_room(char *line, int fd, t_data *data)
 	return (line);
 }
 
-int		**ft_find_links(char *line, int fd, t_room *room, t_data *data)
+int				**ft_find_links(char *line, int fd, t_room *room, t_data *data)
 {
 	int		**matrix;
 	char	**links;
@@ -72,7 +74,7 @@ int		**ft_find_links(char *line, int fd, t_room *room, t_data *data)
 	return (matrix);
 }
 
-int		ft_find_ants(char **line, int fd, t_data *data)
+int				ft_find_ants(char **line, int fd, t_data *data)
 {
 	int ants;
 
@@ -97,11 +99,11 @@ int		ft_find_ants(char **line, int fd, t_data *data)
 	return (ants);
 }
 
-t_room	*ft_read(char *line, t_data *data)
+t_room			*ft_read(char *line, t_data *data)
 {
 	int fd;
 
-	fd = open("../1", O_RDONLY);
+	fd = 0;
 	if (!(data->ants = ft_find_ants(&line, fd, data)))
 		ft_print_error(1, "Ants are absent");
 	line = ft_find_room(line, fd, data);
