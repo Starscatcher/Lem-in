@@ -34,21 +34,7 @@ static int		ft_str_sort(char **str)
 	return (1);
 }
 
-static void		ft_print(char **ways)
-{
-	int i;
-
-	i = 0;
-	while (ways && ways[i])
-	{
-		ft_printf("%s", ways[i]);
-		ways[i + 1] ? ft_printf(" ") : 0;
-		i++;
-	}
-	ft_printf("\n");
-}
-
-void			ft_sort_ants(char *str)
+void			ft_sort_ants(char *str, t_data *data)
 {
 	char	**ways;
 	char	*tmp;
@@ -59,7 +45,7 @@ void			ft_sort_ants(char *str)
 	ft_strdel(&str);
 	while (!ft_str_sort(ways))
 	{
-		while (ways[i])
+		while (ways && ways[i])
 		{
 			if (ways[i] && ways[i + 1] && ft_num(ways[i]) > ft_num(ways[i + 1]))
 			{
@@ -71,6 +57,6 @@ void			ft_sort_ants(char *str)
 		}
 		i = 0;
 	}
-	ft_print(ways);
+	ft_print_ants(ways, data);
 	ft_del_doublestr(&ways);
 }

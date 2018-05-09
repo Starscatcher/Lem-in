@@ -25,7 +25,7 @@ static int		ft_is_ant(t_ways *ways)
 		return (1);
 }
 
-void			ft_save_ants(t_ways *ways)
+void			ft_save_ants(t_ways *ways, t_data *data)
 {
 	t_road	*head;
 	char	*str;
@@ -43,7 +43,7 @@ void			ft_save_ants(t_ways *ways)
 		ways->road = head;
 		ways = ways->next;
 	}
-	ft_sort_ants(str);
+	ft_sort_ants(str, data);
 }
 
 static void		ft_move_ant(t_ways *ways, int *tmp)
@@ -96,6 +96,6 @@ void			ft_move_ants(t_ways *ways, t_data *data)
 				ways = ways->next;
 		}
 		ways = head;
-		ft_save_ants(ways);
+		ft_save_ants(ways, data);
 	}
 }

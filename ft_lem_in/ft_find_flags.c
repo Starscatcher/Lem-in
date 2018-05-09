@@ -30,13 +30,25 @@ int			ft_is_flag(char f, char s)
 {
 	if (f != '-')
 		return (0);
-	if (ft_find("wchslro", s))
+	if (ft_find("wchslfa", s))
 		return (1);
 	else
 		return (0);
 }
 
-void	ft_read_flags(int argc, char **argv, t_flag *flag)
+static void	ft_ants(char **argv, int *i, t_flag *flag, t_data *data)
+{
+	ssize_t num;
+
+	flag->a = 1;
+	num = argv[++*i] ? ft_atoi(argv[*i]) : \
+		ft_print_error(1, "Write a number of ants", data);
+	flag->ants = num;
+	if (flag->ants < 1 || flag->ants > 2147483647)
+		ft_print_error(1, "Number of ants should be a positive integer", data);
+}
+
+void		ft_read_flags(int argc, char **argv, t_flag *flag, t_data *data)
 {
 	int i;
 
@@ -48,10 +60,17 @@ void	ft_read_flags(int argc, char **argv, t_flag *flag)
 		flag->h += argv[i][1] == 'h' ? 1 : 0;
 		flag->s += argv[i][1] == 's' ? 1 : 0;
 		flag->l += argv[i][1] == 'l' ? 1 : 0;
-		flag->r += argv[i][1] == 'r' ? 1 : 0;
-		flag->o += argv[i][1] == 'o' ? 1 : 0;
+		if (argv[i][1] == 'f')
+		{
+			flag->f = 1;
+			if (argv[++i])
+				flag->input = argv[i];
+			else
+				ft_print_error(1, "Write a file name", data);
+		}
+		else if (argv[i][1] == 'a')
+			ft_ants(argv, &i, flag, data);
 		i++;
 	}
-	if (i < argc)
-		flag->h++;
+	flag->h += i < argc ? 1 : 0;
 }

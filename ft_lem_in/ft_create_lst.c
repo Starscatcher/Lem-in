@@ -32,8 +32,10 @@ t_flag	*ft_create_flag(t_flag *flag)
 	flag->h = 0;
 	flag->s = 0;
 	flag->l = 0;
-	flag->r = 0;
-	flag->o = 0;
+	flag->f = 0;
+	flag->a = 0;
+	flag->input = NULL;
+	flag->ants = 0;
 	return (flag);
 }
 
@@ -54,6 +56,9 @@ t_data	*ft_create_data(t_data *data)
 	data->room = NULL;
 	data->ways = NULL;
 	data->flag = NULL;
+	data->step = 0;
+	data->a = 1;
+	data->on = 0;
 	return (data);
 }
 
@@ -63,6 +68,7 @@ t_road	*ft_create_road(t_road *road)
 	road->next = NULL;
 	road->name = NULL;
 	road->prev = NULL;
+	road->ant = 0;
 	return (road);
 }
 

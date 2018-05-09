@@ -73,6 +73,11 @@ void	ft_del_data(t_data **data)
 	ft_del_room(tmp->room);
 	ft_del_ways(tmp->ways);
 	ft_strdel(&tmp->map);
+	if (tmp->flag)
+	{
+		free(tmp->flag);
+		tmp->flag = NULL;
+	}
 	free(*data);
 	*data = NULL;
 }

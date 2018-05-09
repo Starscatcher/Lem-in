@@ -12,7 +12,7 @@
 
 #include "lem_in.h"
 
-int	ft_find_ind(char *name, t_room *room)
+int	ft_find_ind(char *name, t_room *room, t_data *data)
 {
 	int i;
 
@@ -23,7 +23,7 @@ int	ft_find_ind(char *name, t_room *room)
 		i++;
 	}
 	if (!room)
-		ft_print_error(1, "Not valid link");
+		ft_print_error(1, "Not valid link", data);
 	return (i);
 }
 
