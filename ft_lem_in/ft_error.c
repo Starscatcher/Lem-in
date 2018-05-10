@@ -17,6 +17,7 @@ int		ft_print_error(int i, char *str, t_data *data)
 	ft_del_data(&data);
 	errno = i;
 	perror(str);
+	system("leaks lem-in");
 	exit(EXIT_FAILURE);
 }
 

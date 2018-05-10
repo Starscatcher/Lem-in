@@ -86,7 +86,7 @@ void					ft_check_bonuse(t_data *data);
 void					ft_colour_flag(char **ways, t_data *data);
 void					ft_len_flag(t_ways *ways);
 void					ft_help_flag(t_data *data);
-void					ft_ways_flag(t_ways *ways);
+void					ft_ways_flag(t_ways *ways, t_data *data);
 void					ft_help(t_data *data);
 void					ft_read_flags(int ar, char **a, t_flag *f, t_data *d);
 t_flag					*ft_create_flag(t_flag *flag);

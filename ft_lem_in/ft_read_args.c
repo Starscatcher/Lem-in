@@ -19,9 +19,8 @@ static t_room	*ft_make_data(t_room *room, t_room **copy)
 	return (room);
 }
 
-char			*ft_find_room(char *line, int fd, t_data *data)
+char			*ft_find_room(char *line, int fd, t_data *data, t_room *copy)
 {
-	t_room	*copy;
 	int		se;
 
 	se = 0;
@@ -88,7 +87,7 @@ t_room			*ft_read(char *line, t_data *data)
 		ft_print_error(1, "Ants are absent", data);
 	if (!data->on && data->flag->a)
 		ft_ants_flag(data);
-	line = ft_find_room(line, fd, data);
+	line = ft_find_room(line, fd, data, NULL);
 	if (!data->start || !data->end)
 	{
 		ft_strdel(&line);

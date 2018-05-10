@@ -15,14 +15,14 @@
 void	ft_check_bonuse(t_data *data)
 {
 	if (data->flag->w)
-		ft_ways_flag(data->ways);
+		ft_ways_flag(data->ways, data);
 	if (data->flag->l)
 		ft_len_flag(data->ways);
 	if (data->flag->s)
 		ft_printf("Number of step is {sea wave}%d{eoc}.\n\n", data->step - 1);
 }
 
-void	ft_ways_flag(t_ways *ways)
+void	ft_ways_flag(t_ways *ways, t_data *data)
 {
 	int		on;
 	int		count;
@@ -35,7 +35,7 @@ void	ft_ways_flag(t_ways *ways)
 		head = ways->road;
 		while (ways->road)
 		{
-			!on ? ft_printf("{sea wave}WAY %d:{eoc} ", count) : 0;
+			!on ? ft_printf("{sea wave}WAY %d:{eoc} %s -> ", count, data->start) : 0;
 			ft_printf("%s", ways->road->name);
 			ways->road->next ? ft_printf(" -> ") : 0;
 			ways->road = ways->road->next;
@@ -108,5 +108,6 @@ void	ft_help_flag(t_data *data)
 	ft_printf("|                   {red}<START>{eoc}              |\n");
 	ft_printf("|                   {green}<END>{eoc}                |\n");
 	ft_printf("|________________________________________|\n\n");
+	system("leaks lem-in");
 	exit(0);
 }
