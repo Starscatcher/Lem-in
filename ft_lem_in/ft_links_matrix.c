@@ -23,7 +23,7 @@ int	ft_find_ind(char *name, t_room *room, t_data *data)
 		i++;
 	}
 	if (!room)
-		ft_print_error(1, "Not valid link", data);
+		ft_print_error(5, "Not valid room/link", data);
 	return (i);
 }
 

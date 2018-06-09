@@ -17,7 +17,6 @@ int		ft_print_error(int i, char *str, t_data *data)
 	ft_del_data(&data);
 	errno = i;
 	perror(str);
-	system("leaks lem-in");
 	exit(EXIT_FAILURE);
 }
 
@@ -49,7 +48,7 @@ char	**ft_link_error(char **line, int fd, t_data *data)
 	{
 		ft_strdel(line);
 		ft_del_doublestr(&links);
-		ft_print_error(5, "Not valid link", data);
+		ft_print_error(5, "Not valid room/link", data);
 	}
 	return (links);
 }

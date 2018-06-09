@@ -36,5 +36,4 @@ int	main(int argc, char **argv)
 	ft_move_ants(data->ways, data);
 	ft_check_bonuse(data);
 	ft_del_data(&data);
-	system("leaks lem-in");
 }

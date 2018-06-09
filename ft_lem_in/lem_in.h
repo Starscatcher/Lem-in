@@ -84,7 +84,7 @@ void					ft_ants_flag(t_data *data);
 int						ft_print_ants(char **ways, t_data *data);
 void					ft_check_bonuse(t_data *data);
 void					ft_colour_flag(char **ways, t_data *data);
-void					ft_len_flag(t_ways *ways);
+void					ft_len_flag(t_ways *ways, t_road *head);
 void					ft_help_flag(t_data *data);
 void					ft_ways_flag(t_ways *ways, t_data *data);
 void					ft_help(t_data *data);
